@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trazo Oculto · Galería a cielo abierto · 14–17 NOV</title>
+  <meta name="description" content="Trazo Oculto: galería de graffiti a cielo abierto. Circuito de medianeras en Colegiales, del 14 al 17 de noviembre.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&family=Archivo:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#inicio" class="nav__logo" aria-label="Trazo Oculto, inicio">
+      TRAZO<br>OCULTO
+    </a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav__menu" id="navMenu">
+      <a href="#agenda">Agenda</a>
+      <a href="#circuito">Circuito</a>
+      <a href="#artistas">Artistas</a>
+      <a href="#info">Info</a>
+      <a href="#info" class="btn btn--small">Quiero ir</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+
+      <!-- Stickers de las esquinas -->
+      <div class="sticker sticker--bucket" data-depth="0.6" aria-hidden="true">
+        <svg viewBox="0 0 120 120"><path d="M20 40 L100 40 L90 105 Q60 115 30 105 Z" fill="#fff" stroke="#111" stroke-width="5" stroke-linejoin="round"/><ellipse cx="60" cy="40" rx="40" ry="12" fill="#111"/><path d="M30 42 Q35 70 40 58 Q45 80 52 55 Q60 75 66 52 Q72 68 78 50 Q86 62 90 42 Z" fill="#fff" stroke="#111" stroke-width="4"/><circle cx="38" cy="90" r="2" fill="#111"/><circle cx="48" cy="96" r="2" fill="#111"/><circle cx="44" cy="84" r="2" fill="#111"/></svg>
+      </div>
+      <div class="sticker sticker--marker" data-depth="0.4" aria-hidden="true">
+        <svg viewBox="0 0 120 120"><g transform="rotate(40 60 60)"><rect x="48" y="0" width="24" height="70" rx="4" fill="#fff" stroke="#111" stroke-width="5"/><rect x="48" y="52" width="24" height="10" fill="#111"/><path d="M50 70 L70 70 L64 92 L56 92 Z" fill="#fff" stroke="#111" stroke-width="5" stroke-linejoin="round"/><path d="M56 92 L64 92 L60 104 Z" fill="#111"/></g><path d="M20 108 Q40 90 55 104 T95 100" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round"/></svg>
+      </div>
+      <div class="sticker sticker--splash" data-depth="0.5" aria-hidden="true">
+        <svg viewBox="0 0 120 120"><path d="M60 15 Q75 30 72 45 Q95 35 100 55 Q85 62 98 80 Q78 85 74 105 Q60 90 46 106 Q40 86 20 84 Q32 66 18 52 Q38 46 40 28 Q52 38 60 15 Z" fill="#fff" stroke="#111" stroke-width="5" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="sticker sticker--brush" data-depth="0.7" aria-hidden="true">
+        <svg viewBox="0 0 120 120"><g transform="rotate(-35 60 60)"><rect x="52" y="0" width="16" height="55" rx="6" fill="#fff" stroke="#111" stroke-width="5"/><rect x="44" y="52" width="32" height="18" rx="2" fill="#111"/><path d="M42 70 L78 70 L80 108 Q60 118 40 108 Z" fill="#fff" stroke="#111" stroke-width="5" stroke-linejoin="round"/><path d="M50 78 V104 M60 78 V108 M70 78 V104" stroke="#111" stroke-width="3"/></g></svg>
+      </div>
+
+      <div class="hero__inner">
+
+        <!-- Collage izquierdo -->
+        <div class="hero__collage reveal">
+          <div class="collage__figure" id="collageFigure">
+            <!-- Exportá tu recorte (la señora con los anteojos) como PNG con fondo transparente
+                 y guardalo en img/abuela.png -->
+            <img src="img/abuela.png" alt="Collage: señora con anteojos rosas tirando un beso" id="heroImg">
+            <div class="collage__placeholder" aria-hidden="true">
+              <span>img/abuela.png</span>
+            </div>
+          </div>
+
+          <div class="sticker sticker--spray" data-depth="1" aria-hidden="true">
+            <svg viewBox="0 0 120 150"><path d="M64 18 L76 6 M70 24 L88 18 M68 32 L86 36" stroke="#111" stroke-width="5" stroke-linecap="round"/><rect x="42" y="16" width="16" height="14" rx="2" fill="#fff" stroke="#111" stroke-width="5"/><path d="M30 44 Q50 26 70 44 Z" fill="#fff" stroke="#111" stroke-width="5" stroke-linejoin="round"/><rect x="28" y="42" width="44" height="96" rx="8" fill="#fff" stroke="#111" stroke-width="5"/><path d="M38 52 V128" stroke="#111" stroke-width="3" stroke-dasharray="2 6" stroke-linecap="round"/><path d="M60 54 V126" stroke="#111" stroke-width="6" stroke-linecap="round" opacity=".55"/></svg>
+          </div>
+        </div>
+
+        <!-- Texto -->
+        <div class="hero__text">
+          <h1 class="hero__title reveal">
+            <span>TRAZO</span>
+            <span>OCULTO</span>
+          </h1>
+          <p class="hero__subtitle reveal">GALERÍA A CIELO ABIERTO</p>
+          <p class="hero__place reveal">CIRCUITO DE MEDIANERAS, COLEGIALES</p>
+          <div class="hero__date reveal">14–17 NOV</div>
+
+          <div class="hero__cta reveal">
+            <a href="#circuito" class="btn">Ver el circuito</a>
+            <a href="#agenda" class="btn btn--ghost">Agenda</a>
+          </div>
+
+          <!-- Cuenta regresiva -->
+          <div class="countdown reveal" id="countdown" aria-live="polite">
+            <div class="countdown__item"><span id="cd-days">00</span><small>días</small></div>
+            <div class="countdown__item"><span id="cd-hours">00</span><small>horas</small></div>
+            <div class="countdown__item"><span id="cd-mins">00</span><small>min</small></div>
+            <div class="countdown__item"><span id="cd-secs">00</span><small>seg</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CINTA ============ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>4 DÍAS</span><i>✺</i><span>MURALES EN VIVO</span><i>✺</i><span>RECORRIDOS GUIADOS</span><i>✺</i><span>ENTRADA LIBRE</span><i>✺</i><span>COLEGIALES</span><i>✺</i>
+        <span>4 DÍAS</span><i>✺</i><span>MURALES EN VIVO</span><i>✺</i><span>RECORRIDOS GUIADOS</span><i>✺</i><span>ENTRADA LIBRE</span><i>✺</i><span>COLEGIALES</span><i>✺</i>
+      </div>
+    </div>
+
+    <!-- ============ AGENDA ============ -->
+    <section class="section" id="agenda">
+      <h2 class="section__title reveal">AGENDA</h2>
+      <p class="section__lead reveal">Cuatro días pintando la ciudad. Elegí un día para ver la programación.</p>
+
+      <div class="tabs reveal" role="tablist">
+        <button class="tab is-active" role="tab" aria-selected="true" data-day="1">
+          <small>DÍA 1</small>14 NOV
+        </button>
+        <button class="tab" role="tab" aria-selected="false" data-day="2">
+          <small>DÍA 2</small>15 NOV
+        </button>
+        <button class="tab" role="tab" aria-selected="false" data-day="3">
+          <small>DÍA 3</small>16 NOV
+        </button>
+        <button class="tab" role="tab" aria-selected="false" data-day="4">
+          <small>DÍA 4</small>17 NOV
+        </button>
+      </div>
+
+      <div class="panels">
+        <ul class="panel is-active" data-panel="1">
+          <li><time>17:00</time><div><strong>Apertura del circuito</strong><span>Punto de encuentro: Plaza Mafalda</span></div></li>
+          <li><time>18:30</time><div><strong>Primeros trazos</strong><span>Los artistas arrancan las medianeras</span></div></li>
+          <li><time>20:00</time><div><strong>Inauguración + DJ set</strong><span>Brindis de apertura</span></div></li>
+        </ul>
+        <ul class="panel" data-panel="2" hidden>
+          <li><time>15:00</time><div><strong>Recorrido guiado #1</strong><span>Salida cada hora, cupos limitados</span></div></li>
+          <li><time>17:00</time><div><strong>Taller de ilustración digital</strong><span>Con tabletas Wacom</span></div></li>
+          <li><time>19:00</time><div><strong>Live painting</strong><span>Medianeras 1 a 4</span></div></li>
+        </ul>
+        <ul class="panel" data-panel="3" hidden>
+          <li><time>12:00</time><div><strong>Feria de fanzines y stickers</strong><span>Editoriales independientes</span></div></li>
+          <li><time>16:00</time><div><strong>Charla: el muro como lienzo</strong><span>Mesa abierta con artistas</span></div></li>
+          <li><time>18:00</time><div><strong>Recorrido en bici</strong><span>Traé la tuya</span></div></li>
+        </ul>
+        <ul class="panel" data-panel="4" hidden>
+          <li><time>14:00</time><div><strong>Últimos retoques</strong><span>Los murales se terminan en vivo</span></div></li>
+          <li><time>17:00</time><div><strong>Recorrido final</strong><span>Todo el circuito terminado</span></div></li>
+          <li><time>19:30</time><div><strong>Fiesta de cierre</strong><span>Música en vivo + sorpresas</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CIRCUITO ============ -->
+    <section class="section section--light" id="circuito">
+      <h2 class="section__title reveal">EL CIRCUITO</h2>
+      <p class="section__lead reveal">Ocho medianeras, un solo recorrido. Caminalo a tu ritmo o sumate a una visita guiada.</p>
+
+      <div class="route reveal">
+        <svg class="route__line" viewBox="0 0 1000 220" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M20 160 C 140 40, 240 40, 340 120 S 560 200, 660 90 S 880 30, 980 110" fill="none" stroke="currentColor" stroke-width="6" stroke-dasharray="14 12" stroke-linecap="round"/>
+        </svg>
+        <ol class="route__stops">
+          <li style="--c: var(--orange)"><b>01</b><span>Plaza Mafalda</span></li>
+          <li style="--c: var(--lime)"><b>02</b><span>Av. Federico Lacroze</span></li>
+          <li style="--c: var(--pink)"><b>03</b><span>Estación Colegiales</span></li>
+          <li style="--c: var(--lilac)"><b>04</b><span>Calle Conde</span></li>
+          <li style="--c: var(--yellow)"><b>05</b><span>Calle Freire</span></li>
+          <li style="--c: var(--orange)"><b>06</b><span>Mercado de Pulgas</span></li>
+          <li style="--c: var(--lime)"><b>07</b><span>Av. Dorrego</span></li>
+          <li style="--c: var(--pink)"><b>08</b><span>Cierre</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ ARTISTAS ============ -->
+    <section class="section" id="artistas">
+      <h2 class="section__title reveal">ARTISTAS</h2>
+      <p class="section__lead reveal">Quiénes le ponen color a las paredes este año.</p>
+
+      <div class="artists">
+        <article class="artist reveal" style="--c: var(--orange)"><div class="artist__pic"></div><h3>ARTISTA 01</h3><p>Medianera 01</p></article>
+        <article class="artist reveal" style="--c: var(--lime)"><div class="artist__pic"></div><h3>ARTISTA 02</h3><p>Medianera 02</p></article>
+        <article class="artist reveal" style="--c: var(--pink)"><div class="artist__pic"></div><h3>ARTISTA 03</h3><p>Medianera 03</p></article>
+        <article class="artist reveal" style="--c: var(--lilac)"><div class="artist__pic"></div><h3>ARTISTA 04</h3><p>Medianera 04</p></article>
+        <article class="artist reveal" style="--c: var(--yellow)"><div class="artist__pic"></div><h3>ARTISTA 05</h3><p>Medianera 05</p></article>
+        <article class="artist reveal" style="--c: var(--orange)"><div class="artist__pic"></div><h3>ARTISTA 06</h3><p>Medianera 06</p></article>
+        <article class="artist reveal" style="--c: var(--lime)"><div class="artist__pic"></div><h3>ARTISTA 07</h3><p>Medianera 07</p></article>
+        <article class="artist reveal" style="--c: var(--pink)"><div class="artist__pic"></div><h3>ARTISTA 08</h3><p>Medianera 08</p></article>
+      </div>
+    </section>
+
+    <!-- ============ INFO ============ -->
+    <section class="section section--light" id="info">
+      <h2 class="section__title reveal">INFO ÚTIL</h2>
+      <div class="info">
+        <div class="info__card reveal" style="--c: var(--lime)">
+          <h3>¿Cuánto sale?</h3>
+          <p>Nada. El circuito es gratuito y al aire libre.</p>
+        </div>
+        <div class="info__card reveal" style="--c: var(--pink)">
+          <h3>¿Cómo llego?</h3>
+          <p>Tren Mitre (Estación Colegiales), subte B (Estación Dorrego) y varias líneas de colectivo.</p>
+        </div>
+        <div class="info__card reveal" style="--c: var(--yellow)">
+          <h3>¿Si llueve?</h3>
+          <p>Las actividades se reprograman. Seguinos en redes para enterarte al toque.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SPONSORS ============ -->
+    <section class="sponsors" aria-label="Acompañan">
+      <p>ACOMPAÑAN</p>
+      <!-- Reemplazá cada <span> por el <img> del logo en blanco (SVG o PNG) -->
+      <div class="sponsors__row">
+        <span class="sponsor">CYNAR</span>
+        <span class="sponsor">mtn</span>
+        <span class="sponsor sponsor--thin">wacom</span>
+        <span class="sponsor">Sinteplast</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__brand">TRAZO<br>OCULTO</div>
+    <div class="footer__col">
+      <p>Circuito de medianeras<br>Colegiales, CABA</p>
+      <p class="footer__date">14–17 NOV</p>
+    </div>
+    <div class="footer__col">
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+      <a href="mailto:hola@evento.com.ar">hola@evento.com.ar</a>
+    </div>
+    <p class="footer__url">WWW.EVENTO.COM.AR</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
